@@ -40,7 +40,7 @@ hideModal() {
 receivedData() {
 
     //var payload = [];
-    axios.get('https://tapi.telstra.com/presentation/v1/ecommerce-products/products/accessories_con')
+    axios.get('test.json')
       .then(res => {
         const devices = res.data.data.productFamilies;
         const slice = devices.slice(this.state.offset, this.state.offset + this.state.perPage)

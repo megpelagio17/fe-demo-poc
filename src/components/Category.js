@@ -17,7 +17,7 @@ export default class Category extends React.Component {
 
   componentDidMount() {
     //axios.get("https://tapi.telstra.com/presentation/v1/ecommerce-products/products/accessories_con")
-    axios.get("https://tapi.telstra.com/presentation/v1/ecommerce-products/products?segments=accessories_con")
+    axios.get("test.json")
       .then(res => {
         const category = res.data.data.productCategories;
         this.setState({ category });
@@ -26,14 +26,6 @@ export default class Category extends React.Component {
 
   }
 
-  getproductCategories(selectedproductCategories) {
-    axios.get("https://tapi.telstra.com/presentation/v1/ecommerce-products/products?segments=accessories_con")
-      .then(res => {
-        const productFamily = res.data.data.productFamilies;
-        this.setState({ productFamily });
-        //console.log(res.data.data.productFamilies);
-      })
-  }
 
   render() {
     return (

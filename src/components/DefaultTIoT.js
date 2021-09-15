@@ -32,7 +32,7 @@ hideModal() {
     //axios.get("https://tapi.telstra.com/presentation/v1/ecommerce-products/products/accessories_con")
     axios
       .get(
-        "https://tapi.telstra.com/presentation/v1/ecommerce-products/products?segments=accessories_con"
+        "test.json"
       )
       .then((res) => {
         const category = res.data.data.productFamilies;
