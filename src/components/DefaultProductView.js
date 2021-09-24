@@ -40,7 +40,7 @@ hideModal() {
 receivedData() {
 
     //var payload = [];
-    axios.get('test.json')
+    axios.get("https://35iznmumbg.execute-api.ap-southeast-2.amazonaws.com/Staging?segments=accessories_con")
       .then(res => {
         const devices = res.data.data.productFamilies;
         const slice = devices.slice(this.state.offset, this.state.offset + this.state.perPage)

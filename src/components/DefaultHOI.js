@@ -29,7 +29,7 @@ hideModal() {
     //axios.get("https://tapi.telstra.com/presentation/v1/ecommerce-products/products/accessories_con")
     axios
       .get(
-        "test.json"
+        "https://35iznmumbg.execute-api.ap-southeast-2.amazonaws.com/Staging?segments=accessories_con"
       )
       .then((res) => {
         const category = res.data.data.productFamilies;
