@@ -1,2 +1,3 @@
 # fe-demo-poc
-Online shopping website using ReactJs
+Ecommerce website using ReactJs and CSS
+
